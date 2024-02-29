@@ -13,7 +13,7 @@ const App = () => {
   };
   return (
     <CartContextProvider>
-      {isCartShown && <Cart onHideCart={hideCartHandler} />}
+      {isCartShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
